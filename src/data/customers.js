@@ -1,41 +1,49 @@
 const customers = [
  {
     name: "Paul",
-    product: "Shrimp Basket",
+    product: "Shrimp and Steak Basket",
     priceInCents: 599,
-    inStock: true
+    inStock: true,
+    
  },
  {
     name: "Jaiden",
-    product: "Cheesburger Basket",
+    product: "Cheesburger and French Fries Basket",
     priceInCents: 699,
-    inStock: true
+    inStock: true,
+    
 
  },
  {
     name: "Simone",
-    product: "Salmon Basket",
+    product: "Salmon and Yellow Rice Basket",
     priceInCents: 799,
-    inStock: true
+    inStock: true,
+    
  },
  {
     name: "McKenzie",
-    product: "BBQ Chicken Basket",
+    product: "BBQ Chicken with Macaroni and Cheese Basket",
     priceInCents: 899,
-    inStock: true
+    inStock: true,
+    
  },
  {
     name: "Logan",
-    product: "Macaroni and Cheese Basket",
+    product: "Personal Pizza",
+    topping: "Cheese",
+    sauce: "Tomato",
     priceInCents: 799,
-    inStock: true
+    inStock: true,
+    
  },
  {
     name: "Tashea",
     pronunciation: "Ta-Sha",
     products: "Grilled Chicken Basket",
     priceInCents: 599,
-    inStock: true 
+    inStock: true,
+   
 
  },
 ];
