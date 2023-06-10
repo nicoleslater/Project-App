@@ -1,12 +1,26 @@
+// const {
+//     createCustomerProfile,
+//     createProduct
+//  } = require("./src/data/customers");
+
 const {customers} = require("./src/data/customers");
-const { nanoid } = require("nanoid");
+const {faker} = require("@faker-js/faker");
+// const { nanoid } = require("nanoid");
 const log = console.log
 
-function createCustomerProfile(customers){
-    const customer = {
-        log(customers)
-        id: nanoid(4),
-        name: customers.name(),
+function createCustomerProfile(customers, name){
+    const customerProfile = {
+    
+        _id: faker.string.uuid(),
+        name: "Paul",
+
+        
+    }
+    return customerProfile;
+}   
+
+function createProduct(customers){
+    const products = {
         product: customers.product(),
         cookedMeat: customers.cookedMeat(),
         priceInCents: customers.priceInCents(),
@@ -45,4 +59,4 @@ switch(action){
 
 run()
 createCustomerProfile()
-
+createProduct()
