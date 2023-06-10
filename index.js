@@ -9,6 +9,9 @@ function run(){
 const action = process.argv[2];
 const customer = process.argv[3];
 switch(action){
+    case "index":
+        log(action, customer);
+        break;
     case "create":
         log(action, customer);
         break;
