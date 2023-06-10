@@ -1,6 +1,6 @@
 const customers = [
  {
-    id: nanoid(),
+    _id: nanoid(),
     name: "Paul",
     product: "Steak and Shrimp Basket",
     cookedMeat: "Medium Well Done",
@@ -10,7 +10,7 @@ const customers = [
     
  },
  {
-    id: nanoid(),
+    _id: nanoid(),
     name: "Jaiden",
     product: "Cheesburger and French Fries Basket",
     cookedMeat: "Well Done",
@@ -22,7 +22,7 @@ const customers = [
  },
  {
 
-    id: nanoid(),    
+    _id: nanoid(),    
     name: "Simone",
     product: "Salmon and Yellow Rice Basket",
     priceInCents: 799,
@@ -31,7 +31,7 @@ const customers = [
     
  },
  {
-    id: nanoid(),
+    _id: nanoid(),
     name: "McKenzie",
     product: "BBQ Chicken with Macaroni and Cheese Basket",
     priceInCents: 899,
@@ -40,7 +40,7 @@ const customers = [
     
  },
  {
-    id: nanoid(),
+    _id: nanoid(),
     name: "Logan",
     product: "Personal Pizza",
     specialRequests: "Cut into 4 slices",
@@ -51,7 +51,7 @@ const customers = [
     
  },
  {
-    id: nanoid(),
+    _id: nanoid(),
     name: "Tashea",
     pronunciation: "Ta-Sha",
     products: "Grilled Chicken and Lettuce Basket",
