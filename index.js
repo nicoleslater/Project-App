@@ -1,9 +1,5 @@
-const {faker} = require("@faker-js/faker");
+const customers = require("./src/data/customers");
 const log = console.log
-
-function createCustomerPurchase(){
-
-}
 
 
 function run(){
@@ -11,8 +7,7 @@ const action = process.argv[2];
 const customer = process.argv[3];
 switch(action){
     case "index":
-        log(action, customer);
-        break;
+        log(action, customer)
     case "create":
         log(action, customer);
         break;
@@ -32,4 +27,4 @@ switch(action){
 }
 
 run()
-createCustomerPurchase()
+
