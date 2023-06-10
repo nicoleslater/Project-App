@@ -13,8 +13,7 @@ function readJSONFile(path, fileName){
 function writeJSONFile(path, fileName, data){
     // The JSON.stringify() static method 
     // converts a JavaScript value to a JSON string
-    // optionally replacing values if a replacer function
-    // s specified or optionally including
+    // optionally replacing values if a replacer functionspecified or optionally including
     // only the specified properties if a replacer array is specified.
     const data = JSON.stringify(data);
     // take the data make it JSON and put it in the file 

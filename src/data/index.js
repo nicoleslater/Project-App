@@ -1,8 +1,9 @@
-const {writeJSONFile, readJSONFile} = require("./helpers");
 const {faker} = require("@faker-js/faker");
 const log = console.log
 
+function createCustomerPurchase(){
 
+}
 
 
 function run(){
@@ -31,3 +32,4 @@ switch(action){
 }
 
 run()
+createCustomerPurchase()
