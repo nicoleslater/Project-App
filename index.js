@@ -1,4 +1,5 @@
-const { createCustomerProfileById,createCustomerPurchase,} = require("./models/create");
+
+const {createCustomerProduc} = require("./models/create");
 const log = console.log
 const chalk = require("chalk");
 
@@ -31,12 +32,7 @@ switch(action){
 }
 }
 
-function run(){
-    if(process.argv[2] === "customer"){
-        log(chalk.green("Thank you"))
-        createCustomerProfileById(process.argv[3]);
-    }
-}
 
-run();
+
+run()
 log(chalk.green("Thank you so much for your purchase, please come back soon!"))
