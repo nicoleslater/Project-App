@@ -1,10 +1,11 @@
-// const { createCustomerProfileById,createCustomerPurchase,} = require("./models/create");
+const { createCustomerProfileById,createCustomerPurchase,} = require("./models/create");
 const log = console.log
 const chalk = require("chalk");
 
 log(chalk.yellow.bold('Hello'))
 log(chalk.yellow.bold('Welcome!'))
-log(chalk.green.bold('Please make sure you read carefully :-)'))
+log(chalk.blue.bold('Please make sure you read carefully :-)'))
+
 
 function run(){
 const action = process.argv[2];
@@ -28,6 +29,13 @@ switch(action){
         log(chalk.red("I'm sorry there is no customer by that name, please try again"));
 
 }
+}
+
+function run(){
+    if(process.argv[2] === "customer"){
+        log(chalk.green("Thank you"))
+        createCustomerProfileById(process.argv[3]);
+    }
 }
 
 run();
