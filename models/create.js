@@ -1,3 +1,4 @@
+const chalk = require("chalk");
 
 
 function createCustomerProfileById(customers, _id){
@@ -10,6 +11,7 @@ function createCustomerProfileById(customers, _id){
    }
    return customerProfileById
 }   
+console.log(chalk.green("Thank you for submitting this information"))
 
 function createCustomerPurchase(customers, _priceInCents){
     let customerPurchase = 0
@@ -18,7 +20,7 @@ function createCustomerPurchase(customers, _priceInCents){
     }
     return customerPurchase;
 }
-    
+console.log(chalk.green("Thank you for submitting your order"))   
 
 
 module.exports = {
