@@ -69,7 +69,6 @@ const customers = [
  {
     _id: nanoid(),
     firstName: "Tashea",
-    pronunciation: "Ta-Sha",
     products: "Grilled Chicken and Lettuce Basket",
     cookedMeat: false,
     specialRequests: "Please make sure the chicken is in bite size",

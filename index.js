@@ -1,6 +1,4 @@
-const customers = require("./src/data/customers");
-// const {faker} = require("@faker-js/faker");
-const { nanoid } = require("nanoid");
+const { createCustomerProfile,createCustomerPurchase,} = require("./models/create");
 const log = console.log
 
 

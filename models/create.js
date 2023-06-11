@@ -1,18 +1,18 @@
-const customers = require("./src/data/customers");
-// const {nanoid} = require("nanoid");
 
-function createCustomerProfile(customers, _id){
-   let customberById = null 
-   for (let customer of customers){
-    if(customers._id === _id){
-        return customberById = customer
+
+function createCustomerProfileById(customers, _id){
+   let customerProfileById = [];
+
+   for(let customer of customers){
+    if (customers._id === _id){
+        return customerProfileById = customer
     }
    }
-   return customberById
+   return customerProfileById
 }   
 
 function createCustomerPurchase(customers, _priceInCents){
-    let customerPurchase = null
+    let customerPurchase = 0
     for (let _customer of customers){
         customerPurchase += customers.priceInCents
     }
@@ -22,6 +22,6 @@ function createCustomerPurchase(customers, _priceInCents){
 
 
 module.exports = {
-    createCustomerProfile,
+    createCustomerProfileById,
     createCustomerPurchase,
 }
