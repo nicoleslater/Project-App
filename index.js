@@ -1,6 +1,4 @@
-
-const {create} = require("./models/create");
-
+const products = require("./src/data/products");
 const chalk = require("chalk");
 
 console.log(chalk.magenta.bold('Hello!'))

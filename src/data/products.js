@@ -1,4 +1,4 @@
-[
+const products = [
 {
  
     _id: "nj5h" ,
@@ -46,11 +46,6 @@
     priceInCents: 599,
     inStock: true,
     
-   
-
- }
-
- 
-
+}
 
 ]

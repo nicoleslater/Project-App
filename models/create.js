@@ -1,15 +1,18 @@
-
-
-
-function create(products){
-const product = [];
-    for (let product of products){
-        product.push(createCustomerProduct());
+function create(){
+    let result = 0 
+    for (let products of cart){
+        result += products.priceInCents
     }
-        return product;
-} 
+    return result;
+}
+    
+function destroy(){}
+function update(){}
+
 
 
 module.exports = {
-    create
+    create,
+    destroy, 
+    update
 }

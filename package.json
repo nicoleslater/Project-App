@@ -6,10 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": " node index.js",
-    "create": "node index.js create"
+    "create": "node index.js create",
+    "destroy": "node index.js destroy",
+    "update": "node index.js update"
+
   },
   "keywords": [],
-  "author": "",
+  "author": "Nicole Slater",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
