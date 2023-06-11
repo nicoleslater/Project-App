@@ -1,24 +1,25 @@
-const {customers} = require("./src/data/customers");
-const {nanoid} = require("nanoid");
+const customers = require("./src/data/customers");
+// const {nanoid} = require("nanoid");
 
-function createCustomerProfile(customers){
-    const customer = {
-        id: nanoid(),
-        name: customers.name(),
-        product: customers.product(),
-        cookedMeat: customers.cookedMeat(),
-        priceInCents: customers.priceInCents(),
-        inStock: customers.inStock(),
-        specialRequests: customers.specialRequests(),
-        topping: customers.topping(),
-        sauce: customers.sauce(),
+function createCustomerProfile(customers, _id){
+   let customberById = null 
+   for (let customer of customers){
+    if(customers._id === _id){
+        return customberById = customer
     }
-    return customer;
-}
+   }
+   return customberById
+}   
 
-function createCustomerPurchase(customers){
-
+function createCustomerPurchase(customers, _priceInCents){
+    let customerPurchase = null
+    for (let _customer of customers){
+        customerPurchase += customers.priceInCents
+    }
+    return customerPurchase;
 }
+    
+
 
 module.exports = {
     createCustomerProfile,

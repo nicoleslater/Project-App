@@ -4,8 +4,8 @@ const {nanoid} = require("nanoid");
 const customers = [
  {
     _id: nanoid(),
-    name: "Paul",
-    product: "Steak and Shrimp Basket",
+    firstName: "Paul",
+    products: "Steak and Shrimp Basket",
     cookedMeat: "Medium Well Done",
     priceInCents: 599,
     inStock: true,
@@ -16,8 +16,8 @@ const customers = [
  },
  {
     _id: nanoid(),
-    name: "Jaiden",
-    product: "Cheesburger and French Fries Basket",
+    firstName: "Jaiden",
+    products: "Cheesburger and French Fries Basket",
     cookedMeat: "Well Done",
     priceInCents: 699,
     inStock: true,
@@ -30,9 +30,9 @@ const customers = [
  {
 
     _id: nanoid(),    
-    name: "Simone",
+    firstName: "Simone",
     cookedMeat: false,
-    product: "Salmon and Yellow Rice Basket",
+    products: "Salmon and Yellow Rice Basket",
     priceInCents: 799,
     inStock: true,
     specialRequests: false,
@@ -42,8 +42,8 @@ const customers = [
  },
  {
     _id: nanoid(),
-    name: "McKenzie",
-    product: "BBQ Chicken with Macaroni and Cheese Basket",
+    firstName: "McKenzie",
+    products: "BBQ Chicken with Macaroni and Cheese Basket",
     cookedMeat: false,
     priceInCents: 899,
     inStock: true,
@@ -54,8 +54,8 @@ const customers = [
  },
  {
     _id: nanoid(),
-    name: "Logan",
-    product: "Personal Pizza",
+    firstName: "Logan",
+    products: "Personal Pizza",
     cookedMeat: false,
     specialRequests: "Cut into 4 slices",
     topping: "Cheese",
@@ -68,7 +68,7 @@ const customers = [
  },
  {
     _id: nanoid(),
-    name: "Tashea",
+    firstName: "Tashea",
     pronunciation: "Ta-Sha",
     products: "Grilled Chicken and Lettuce Basket",
     cookedMeat: false,
