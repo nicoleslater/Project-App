@@ -1,25 +1,13 @@
 const fs = require("node:fs");
+const { writeFileSync } = require("node:fs");
 
-const { readFileSync, writeFileSync } = fs;
-
-function readJSONFile(path, fileName){
-    const collection = readFileSync(`${path}/${fileName}`, "utf-8")
-    // reads the JSON turning into an array 
-    return collection ? JSON.parse(collection) : []
-    // creates the array, conditons 
-
+function writeJSONFile(path, fileName, data) {
+  return writeFileSync(`${path}/${fileName}`, data, { encoding: "utf-8" });
 }
 
-function writeJSONFile(path, fileName, data){
-    // The JSON.stringify() static method 
-    // converts a JavaScript value to a JSON string
-    // optionally replacing values if a replacer functionspecified or optionally including
-    // only the specified properties if a replacer array is specified.
-    const data = JSON.stringify(data);
-    // take the data make it JSON and put it in the file 
-    return writeFileSync(`${path}/${fileName}`, data, {encoding: "utf-8"})
-    
-}
+module.exports = {
+  writeJSONFile,
+};
 module.exports = {
     readJSONFile, 
     writeJSONFile,

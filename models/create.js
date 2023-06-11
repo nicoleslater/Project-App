@@ -1,11 +1,9 @@
-const chalk = require("chalk");
 
 
 
-function createCustomerProduct(_number){
-    console.log(createCustomerProduct(4))
-    const product = [];
-    for (let i = 0; i < _number; i++){
+function create(products){
+const product = [];
+    for (let product of products){
         product.push(createCustomerProduct());
     }
         return product;
@@ -13,5 +11,5 @@ function createCustomerProduct(_number){
 
 
 module.exports = {
-    createCustomerProduct
+    create
 }

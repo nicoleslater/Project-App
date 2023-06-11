@@ -1,4 +1,5 @@
-const {createCustomerProduct} = require("./models/create");
+
+const {create} = require("./models/create");
 
 const chalk = require("chalk");
 
@@ -10,7 +11,7 @@ console.log(chalk.blue.bold('Please make sure you read carefully :-)'))
 function run(){
 const action = process.argv[2];
 const customer = process.argv[3];
-switch(action){
+switch("create"){
     case "index":
         console.log(action, customer)
     case "create":
@@ -27,6 +28,7 @@ switch(action){
         break;
     default:
         console.log(chalk.red("I'm sorry there is no customer by that name, please try again"));
+        
 
 }
 }
@@ -35,4 +37,4 @@ switch(action){
 
 run()
 console.log(chalk.green("Thank you so much for your purchase, please come back soon!"))
-createCustomerProduct()
+create()
