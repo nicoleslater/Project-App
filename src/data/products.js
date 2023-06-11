@@ -1,6 +1,4 @@
-
-{
-   const products = [
+[
 {
  
     _id: "nj5h" ,
@@ -51,8 +49,8 @@
    
 
  }
-];
- 
-console.log(JSON.stringify(products));
 
-}
+ 
+
+
+]
