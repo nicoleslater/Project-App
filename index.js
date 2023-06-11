@@ -2,8 +2,8 @@ const { createCustomerProfileById,createCustomerPurchase,} = require("./models/c
 const log = console.log
 const chalk = require("chalk");
 
-log(chalk.yellow.bold('Hello'))
-log(chalk.yellow.bold('Welcome!'))
+log(chalk.magenta.bold('Hello'))
+log(chalk.cyan.bold('Welcome!'))
 log(chalk.blue.bold('Please make sure you read carefully :-)'))
 
 
