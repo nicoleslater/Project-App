@@ -13,9 +13,7 @@ const products = [
     priceInCents: 699,
     inStock: true,
 
-    
-
- },
+},
  {
 
     _id:"jgid",    
@@ -29,8 +27,6 @@ const products = [
     name: "BBQ Chicken with Macaroni and Cheese Basket",
    priceInCents: 899,
     inStock: true,
-    
-    
  },
  {
     _id: "ntsf9",

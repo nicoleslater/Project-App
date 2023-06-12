@@ -1,23 +1,17 @@
-function index(){
-
+function index(products, ){
+  let newArray = [];
+  for (let i = 0; i < products; i++){
+    return newArray
+  }
 }
-
-
-
 
 function create(){
-  let product = [];
-    
-    const productName = products.name
-    const priceOfProduct = products.priceInCents
-    const stockedProducts = products.inStock
-for (let _element of products){
-    return product;
+
 }
-}
+
     
 function destroy(){
-    return find(products => products)
+    
 }
 function update(){}
 function show(){}

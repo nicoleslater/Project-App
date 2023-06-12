@@ -1,10 +1,11 @@
+const { readJSONFile } = require("./models/helpers");
 const {create,
        index,
        show, 
         destroy,
         update
  } = require("./src/create");
-const products = require("./src/data/products");
+const products = readJSONFile("./");
 const chalk = require("chalk");
 
 console.log(chalk.magenta.bold('Hello!'))
@@ -15,7 +16,7 @@ console.log(chalk.blue.bold('Please make sure you read carefully :-)'))
 function run(){
 const action = process.argv[2];
 const customer = process.argv[3];
-switch("create"){
+switch("index"){
     case "index":
         console.log(action, customer)
     case "create":
@@ -42,3 +43,7 @@ switch("create"){
 run()
 console.log(chalk.green("Thank you so much for your purchase, please come back soon!"))
 create()
+index()
+show()
+destroy()
+update()
