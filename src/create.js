@@ -1,7 +1,7 @@
 function index(products, ){
-  let newArray = [];
-  for (let i = 0; i < products; i++){
-    return newArray
+  let product = {};
+  for (let i = 0; i < product.length; i++){
+    return product
   }
 }
 

@@ -1,11 +1,13 @@
-const { readJSONFile } = require("./models/helpers");
-const {create,
+const { readJSONFile, writeJSONFile } = require("./models/helpers");
+
+const {
+       create,
        index,
        show, 
-        destroy,
-        update
- } = require("./src/create");
-const products = readJSONFile("./");
+       destroy,
+       update
+      } = require("./src/create");
+
 const chalk = require("chalk");
 
 console.log(chalk.magenta.bold('Hello!'))
