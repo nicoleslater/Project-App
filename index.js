@@ -1,3 +1,9 @@
+const {create,
+       index,
+       show, 
+        destroy,
+        update
+ } = require("./src/create");
 const products = require("./src/data/products");
 const chalk = require("chalk");
 
