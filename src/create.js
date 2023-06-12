@@ -1,20 +1,49 @@
-function index(products, ){
-  let product = {};
-  for (let i = 0; i < product.length; i++){
-    return product
-  }
+const { readJSONFile } = require("../models/helpers");
+
+let products = readJSONFile("./data", "objects.json")
+
+
+
+function index(_products){
+    
+    for (let index = 0; index < 6; i++){
+        return index;
+    }
+
 }
+     
 
-function create(){
 
+function create(products){
+        let purchase = {
+            name: products[0].name,
+            priceInCents: products[0].priceInCents,
+            inStock: products[0].inStock
+        }
+        return purchase
 }
 
     
-function destroy(){
+function destroy(products){
+    const index = products.findIndex((product) => product.priceInCents === priceInCents);
+ if (index > -1){
+    products.splice(index, 1);
+    return products
+ } else {
+    console.log(chalk.red(" The item has been delete. Thank you!"))
+ }
+
+}
+
+
+function update(_products){
     
 }
-function update(){}
-function show(){}
+
+
+function show(products){
+    return products.length;
+}
 
 
 

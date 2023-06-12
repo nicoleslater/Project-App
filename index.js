@@ -10,6 +10,7 @@ const {
 
 const chalk = require("chalk");
 
+
 console.log(chalk.magenta.bold('Hello!'))
 console.log(chalk.cyan.bold('Welcome!'))
 console.log(chalk.blue.bold('Please make sure you read carefully :-)'))
@@ -42,8 +43,8 @@ switch("index"){
 
 
 
-run()
 console.log(chalk.green("Thank you so much for your purchase, please come back soon!"))
+run()
 create()
 index()
 show()

@@ -10,7 +10,6 @@
     "destroy": "node index.js destroy",
     "update": "node index.js update",
     "index": "node index.js index"
-
   },
   "keywords": [],
   "author": "Nicole Slater",
