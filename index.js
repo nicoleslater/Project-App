@@ -19,9 +19,12 @@ console.log(chalk.blue.bold('Please make sure you read carefully :-)'))
 function run(){
 const action = process.argv[2];
 const customer = process.argv[3];
+let products = readJSONFile("./src/data", "objects.json")
+let writeToFile = false
+let updatedProducts = []
 switch("index"){
     case "index":
-        console.log(action, customer)
+        console.log(products)
     case "create":
         console.log(action, customer);
         break;
@@ -45,8 +48,4 @@ switch("index"){
 
 console.log(chalk.green("Thank you so much for your purchase, please come back soon!"))
 run()
-create()
-index()
-show()
-destroy()
-update()
+

@@ -1,15 +1,11 @@
 const { readJSONFile } = require("../models/helpers");
 
-let products = readJSONFile("./data", "objects.json")
 
 
 
-function index(_products){
-    
-    for (let index = 0; index < 6; i++){
-        return index;
-    }
 
+function index(products){
+for (let i = 0; i < )
 }
      
 
